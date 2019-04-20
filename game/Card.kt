@@ -1,4 +1,4 @@
-package eleusis
+package eleusis.game
 
 enum class Suit{ Spide, Heart, Diamond, Club }
 enum class Color{ Black, Red }
