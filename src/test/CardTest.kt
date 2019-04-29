@@ -1,7 +1,9 @@
-package eleusis.test
+package test
 
 import kotlin.test.assertTrue
-import eleusis.game.*
+import game.Card
+import game.Color
+import game.Suit
 
 class CardTest
 {
