@@ -2,16 +2,17 @@ package game
 
 interface Role
 {
-  fun selectCards(): Array<Card?> { return arrayOfNulls<Card>(4) }
-  fun validate( lastSixCards: Array<Card?>, playedCards: Array<Card?> ): Boolean { return false }
+  fun selectCards(): IntArray { return  intArrayOf( -1, -1, -1, -1 ) }
+  fun validate( lastSixCards: IntArray, playedCards: IntArray ): Boolean { return false }
   fun becomeProphet() {}
   fun declareNothingToPlay() {}
 }
 
 class Researcher : Role
 {
-  override fun selectCards(): Array<Card?>
+  override fun selectCards(): IntArray
   {
+
     TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
 
@@ -28,12 +29,12 @@ class Researcher : Role
 
 class Prophet : Role
 {
-  override fun selectCards(): Array<Card?>
+  override fun selectCards(): IntArray
   {
     TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
 
-  override fun validate(lastSixCards: Array<Card?>, playedCards: Array<Card?>): Boolean
+  override fun validate(lastSixCards: IntArray, playedCards: IntArray): Boolean
   {
     TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
@@ -41,12 +42,12 @@ class Prophet : Role
 
 class GameMaster : Role
 {
-  override fun selectCards(): Array<Card?>
+  override fun selectCards(): IntArray
   {
     TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
 
-  override fun validate(lastSixCards: Array<Card?>, playedCards: Array<Card?>): Boolean
+  override fun validate(lastSixCards: IntArray, playedCards: IntArray): Boolean
   {
     TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
